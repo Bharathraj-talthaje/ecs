@@ -1,0 +1,161 @@
+CRITICAL - 2024-08-26 06:09:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "services.php"
+[Method: GET, Route: services]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('services.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('services', [], true)
+ 3 APPPATH\Controllers\Home.php(52): view('services')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->services()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-26 06:11:35 --> Error: Call to undefined function views()
+[Method: GET, Route: /]
+in APPPATH\Views\home.php on line 36.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(18): view('home')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-26 06:49:54 --> ErrorException: Undefined array key "fav_language"
+[Method: POST, Route: send_email]
+in APPPATH\Controllers\Home.php on line 80.
+ 1 APPPATH\Controllers\Home.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fav_language"', 'C:\\xampp\\htdocs\\ecs\\app\\Controllers\\Home.php', 80)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->send_email()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-26 06:51:14 --> ErrorException: Undefined variable $headers
+[Method: POST, Route: send_email]
+in APPPATH\Controllers\Home.php on line 82.
+ 1 APPPATH\Controllers\Home.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $headers', 'C:\\xampp\\htdocs\\ecs\\app\\Controllers\\Home.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->send_email()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-26 06:51:38 --> ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+[Method: POST, Route: send_email]
+in APPPATH\Controllers\Home.php on line 102.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()', 'C:\\xampp\\htdocs\\ecs\\app\\Controllers\\Home.php', 102)
+ 2 APPPATH\Controllers\Home.php(102): mail('winsfolio@gmail.com
+', 'Get a Quote Request From landio', '************************************************** 
+Request from landio Get a Quote Form!  
+************************************************** 
+Name: dsfdsf
+E-mail: rajbharath533@gmail.com
+Phone: 8943868855
+Preferred Consult Method:: english
+', 'Reply-To: dsfdsf <rajbharath533@gmail.com>
+Return-Path: The Sender <rajbharath533@gmail.com>
+landio Get A Quote
+From: rajbharath533@gmail.com
+Reply-To: dsfdsf <rajbharath533@gmail.com>
+Return-Path: The Sender <rajbharath533@gmail.com>
+landio Get A Quote
+MIME-Version: 1.0
+Content-type: text/html; charset=utf-8
+X-Priority: 3
+X-Mailer: PHP8.2.12
+')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->send_email()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-26 06:55:20 --> ErrorException: Undefined array key "complete_Name"
+[Method: POST, Route: send_email]
+in APPPATH\Controllers\Home.php on line 77.
+ 1 APPPATH\Controllers\Home.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "complete_Name"', 'C:\\xampp\\htdocs\\ecs\\app\\Controllers\\Home.php', 77)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->send_email()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-26 06:56:33 --> ErrorException: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+[Method: POST, Route: send_email]
+in APPPATH\Controllers\Home.php on line 103.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()', 'C:\\xampp\\htdocs\\ecs\\app\\Controllers\\Home.php', 103)
+ 2 APPPATH\Controllers\Home.php(103): mail('ecs_mangalore@gmail.com
+', 'Get a Quote Request From ECS', '************************************************** 
+Request from ECS Get a Quote Form!  
+************************************************** 
+Name: 894cxzcxc
+E-mail: cxvcxvxc@asas.com
+Phone: asdasdsa
+Message: vxcvcxvasdasdasd
+', 'Reply-To: 894cxzcxc <cxvcxvxc@asas.com>
+Return-Path: The Sender <cxvcxvxc@asas.com>
+ECS Get A Quote
+From: cxvcxvxc@asas.com
+Reply-To: 894cxzcxc <cxvcxvxc@asas.com>
+Return-Path: The Sender <cxvcxvxc@asas.com>
+ECS Get A Quote
+MIME-Version: 1.0
+Content-type: text/html; charset=utf-8
+X-Priority: 3
+X-Mailer: PHP8.2.12
+')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->send_email()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-26 06:57:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "thank_you.php"
+[Method: GET, Route: thank-you]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('thank_you.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('thank_you', [], true)
+ 3 APPPATH\Controllers\Home.php(125): view('thank_you')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->thank_you()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-26 06:57:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "thank_you.php"
+[Method: GET, Route: thank-you]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('thank_you.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('thank_you', [], true)
+ 3 APPPATH\Controllers\Home.php(125): view('thank_you')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->thank_you()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-26 06:58:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "thank_you.php"
+[Method: GET, Route: thank-you]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('thank_you.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('thank_you', [], true)
+ 3 APPPATH\Controllers\Home.php(125): view('thank_you')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->thank_you()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-08-26 07:11:08 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: ";"
+[Method: GET, Route: s/33e27393e2431313e2838313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars()
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
