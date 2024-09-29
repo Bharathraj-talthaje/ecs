@@ -17,6 +17,7 @@ $routes->get('/services/mobile-app-development', 'Services::mobile_app_developme
 $routes->get('/services/best-graphic-design-services', 'Services::best_graphic_design_services');
 $routes->get('/services/domain-and-web-hosting-services', 'Services::domain_and_web_hosting_services');
 $routes->get('/services/business-emails', 'Services::business_emails');
+$routes->get('/services/digital-marketing-agency', 'Services::digital_marketing_agency');
 
 
 $routes->get('/contact-us', 'Home::contact_us');

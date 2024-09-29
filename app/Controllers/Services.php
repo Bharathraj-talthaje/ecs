@@ -98,6 +98,23 @@ class Services extends BaseController
         echo view('services/business_emails');
         echo view('footer');
     } 
+
+
+    public function digital_marketing_agency()
+    {  
+        $data=[
+            'title'=>'Digital Marketing Services- Kasaragod, Mangalore',
+            'author'=>'Bharathraj Talthaje',
+            'description'=>'Discover expert digital marketing services at ECS. We offer SEO, social media marketing, Google Ads, and more to help your business grow and engage with the right audience',
+            'ogimage'=>base_url('og_icon.webp'),
+            'og_type'=>'website', 
+            'keywords'=>'Web design, web development, email services, Digital Marketing Services, web development company in mangalore, web development company in kasaragod'
+        ];
+
+        echo view('header',$data);
+        echo view('services/digital_marketing');
+        echo view('footer');
+    } 
     
     
 
